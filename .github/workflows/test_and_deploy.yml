@@ -48,10 +48,6 @@ jobs:
         with:
           files: |
             out.zip
-            travis_installer_output/07th-Mod.Installer.mac.zip
-            travis_installer_output/07th-Mod.Installer.linux.tar.gz
-            travis_installer_output/07th-Mod.Installer.Windows.exe
-          body_path: github_actions_changelog_template.txt
           draft: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
