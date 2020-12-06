@@ -49,6 +49,9 @@ def main():
 	# Extract the archive
 	unzip('asdf.7z')
 
+	# Copy the DLL
+	shutil.copy('Assembly-CSharp.dll', 'Higurashi When They Cry Modded\\HigurashiEp01_Data\\Managed\\Assembly-CSharp.dll')
+
 	# Run the exe as a separate process (It seems this runs in a blocking manner)
 	# even though when run in windows cmd prompt it is non-blocking/new process?
 	call(['Higurashi When They Cry Modded\\HigurashiEp01.exe', 'quitaftercompile'])
